@@ -28,7 +28,7 @@ Avant de lancer le script, assurez-vous d'avoir :
 1. **Télécharger le script** :
 
    ```bash
-   sudo curl -L https://raw.githubusercontent.com/Yoshew21/Asterisk/refs/heads/main/install_asterisk.sh
+   sudo curl -L https://raw.githubusercontent.com/Yoshew21/Asterisk/refs/heads/main/install_asterisk.sh | sh
    ```
 
 > 💡 *Le script prend en charge toutes les étapes automatiquement, y compris l'installation des dépendances.*
