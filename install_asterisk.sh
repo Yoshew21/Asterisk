@@ -57,6 +57,11 @@ echo "=== Enabling and starting the Asterisk service ==="
 systemctl enable asterisk
 systemctl start asterisk
 
+echo "=== Verifying some things ==="
+cd /usr/src/asterisk-22*/
+make samples
+systemctl restart asterisk
+
 echo "=== Verifying if the Asterisk service is running ==="
 systemctl status asterisk
 
