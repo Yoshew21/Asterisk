@@ -51,7 +51,7 @@ make config
 
 echo "=== Saving default config files ==="
 mkdir /etc/asterisk/samples
-mv /etc/asterisk/*.* /etc/asterisk/samples/
+cp /etc/asterisk/*.* /etc/asterisk/samples/
 
 echo "=== Enabling and starting the Asterisk service ==="
 systemctl enable asterisk
@@ -60,6 +60,8 @@ systemctl start asterisk
 echo "=== Verifying some things ==="
 cd /usr/src/asterisk-22*/
 make samples
+make basic-pbx
+make config
 systemctl restart asterisk
 
 echo "=== Verifying if the Asterisk service is running ==="
